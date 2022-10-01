@@ -1,0 +1,206 @@
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+        
+    background-color: hsl(229, 57%, 11%);
+    }
+
+    .bg{
+        margin-top:20% ;
+        width: 100%;
+    }
+
+    main{ 
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .flexbox1{
+        background-color: hsl(228, 56%, 26%);
+        margin-top: 20%;
+        margin-bottom: -25%;
+        width: 15%;
+        height: 120px;
+        padding: 50px;
+        border-top-right-radius:100px ;
+        border-top-left-radius:10px ;
+        border-bottom-left-radius:10px ;
+        border-bottom-right-radius:10px ;
+        z-index: 1;
+    }
+
+    .icons{
+        padding: 20px 0px 10px 0px;
+        
+    }
+
+    .icon{
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        padding: 15px;
+        background-color: hsl(229, 57%, 11%);
+         border-radius: 10px;
+    }
+
+    .flexbox2{
+        background-color: hsl(228, 56%, 26%);
+        margin-top: 20%;
+        margin-bottom: -25%;
+        margin-left: 30px;
+        z-index: 1;
+        padding: 40px;
+        border-radius: 10px;
+        height: 125px;
+    }
+    
+    .progress{
+        background-color:hsl(229, 57%, 11%) ;
+        border-radius: 20px;
+        height: 15px;
+        width: 500px;
+    }
+
+    .progress-done{
+        background: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+        border-radius:20px ;
+        height: 15px;
+        width: 400px;
+    }
+
+    .progress-point{
+        background-color:white ;
+        border-radius: 20px;
+        height: 13px;
+        width: 13px;
+        margin-left: 383px;
+    }
+
+    b{
+        font-size: 25px;
+    }
+
+    .bubble{
+        position: relative;
+        background-color: #fff;
+        color: black;
+        width: 125px;
+        height: 30px;
+        margin-left:350px ;
+        margin-top: -83px;
+        margin-bottom: 60px;
+        padding: 20px;
+        border-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .bubble:after{
+        content: "";
+        width: 0px;
+        position: absolute;
+        margin-top: 20px;
+        display: block;
+        height: 0px;
+        border-bottom: 30px solid transparent;
+        border-right: 30px solid #fff;
+        margin-left: 115px;
+        
+    }
+
+    p{
+        color: hsl(243, 100%, 93%);
+        margin-bottom: -50px;
+        position:absolute;
+        
+    }
+
+    .right{
+        position: absolute;
+        margin-left: 450px;
+        font-size: 14px;
+        width: 100px;
+        font-weight: 600;
+    }
+
+    .data{
+        margin-left: 60px;
+        margin-top: -25px;
+        padding: 0;
+        color:hsl(229, 7%, 55%) ;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .mob-bg{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    @media only screen and (max-width:860px) {
+
+        main{
+            flex-direction: column;
+        }
+        
+        .flexbox1{
+            width: 280px;
+            height: auto;
+            
+        }
+
+        .flexbox2{
+            width:300px;
+            height:120px ;
+            margin-top: 150px;
+            margin-right: 35px;
+            
+        }
+
+        .progress
+        {
+            width: auto;
+            margin-top: 50px;
+
+        }
+
+        .progress-done{
+            width: 80%;
+
+        }
+
+        .progress-point{
+            margin-left: auto;
+        }
+
+        .bg{
+            opacity: 0;
+        }
+
+        .right{
+            margin-left: 230px;
+        }
+
+        .bubble{
+           margin-top: 130px;
+           margin-left:50px;
+            position: absolute;
+            border-bottom-right-radius: 10px;
+            
+        }
+
+        .bubble:after{
+            border: none;
+            
+        }
+
+        .mob-bg{
+            opacity: 1;
+            margin-top: -690px;
+            width: 100%;
+            height: 100%;
+        }
+
+    }
